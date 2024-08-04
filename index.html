@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Untitled Document</title>
+
+    <style>
+      .head {
+        padding-top: 2cm;
+        padding-bottom: 2cm;
+      }
+
+      table {
+        padding-left: 2cm;
+        padding-right: 2cm;
+      }
+      .foot {
+        padding-bottom: 2cm;
+        padding-top: 2cm;
+      }
+
+      @media print {
+        .sticky {
+          position: fixed;
+          bottom: 2cm;
+        }
+
+        body {
+          visibility: hidden;
+        }
+
+        #section-to-print {
+          visibility: visible;
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper" style="display: flex">
+      <aside
+        class="sidebar"
+        style="width: 25vh; display: flex; flex-direction: column; gap: 1rem; border-right: 1px solid black; height: 100%; flex: 1"
+      >
+        <div><h2>Ich bin die Sidebar</h2></div>
+        <p>ich mach so dies und das</p>
+
+        <div style="display: flex; flex-direction: column; gap: 1rem">
+          <input type="text" placeholder="Inputs n stuff" />
+          <button>Übernehmen</button>
+        </div>
+      </aside>
+
+      <main id="section-to-print" class="main-content" style="flex: 3">
+        <table>
+          <thead>
+            <tr>
+              <th>
+                <div class="head">Smile</div>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div>
+                  <h1>Cool shit</h1>
+
+                  <div>
+                    <!-- content -->
+
+                    <h2>Woowie!</h2>
+
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem voluptas iste doloribus quidem sequi consequuntur
+                      aspernatur ipsum sed voluptatibus modi error, provident consequatur et qui delectus perspiciatis eligendi quisquam!
+                      Eveniet porro necessitatibus eligendi eaque voluptas accusamus maiores sequi alias? Voluptatem alias aliquid, debitis
+                      sed eveniet quis modi dicta porro dignissimos voluptatibus sapiente sequi ipsam velit consequatur eius corporis vel a
+                      reprehenderit consectetur nobis amet? Fugiat veritatis vel expedita totam obcaecati esse, beatae ad eveniet, quae,
+                      magnam minus libero qui ipsa neque id itaque molestiae. Aut recusandae iure ratione aliquam autem similique iste,
+                      molestiae enim iusto at alias necessitatibus. Fugit, tenetur nam consequatur assumenda iste accusamus dicta tempora
+                      aut perferendis rerum, sunt repellendus quis corporis a molestias dolorum rem quibusdam quia odit quisquam. Quae in
+                      unde sint quasi, ut temporibus, nostrum reiciendis mollitia laboriosam maiores voluptate nam provident ipsum ratione
+                      neque ullam natus corporis eos, dolore quisquam culpa est optio dolor. Officiis labore rem cum repudiandae ad hic
+                      obcaecati soluta omnis velit voluptatum, aperiam dolorum quis necessitatibus inventore explicabo ipsum. Odit cumque
+                      modi possimus necessitatibus, tempore dolore? Odio, amet? Fuga sapiente totam eaque necessitatibus quod? Aliquam
+                      possimus, explicabo a adipisci dolore deserunt magni totam fugiat tempora excepturi nulla vel consectetur vitae!
+                    </p>
+
+                    <table>
+                      <tr>
+                        <th>Pos</th>
+                        <th>Name</th>
+                        <th>Preis</th>
+                      </tr>
+                      <tr>
+                        <td>0</td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, officia.</td>
+                        <td>100</td>
+                      </tr>
+                      <tr>
+                        <td>0</td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, officia.</td>
+                        <td>100</td>
+                      </tr>
+                      <tr>
+                        <td>0</td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, officia.</td>
+                        <td>100</td>
+                      </tr>
+                      <tr>
+                        <td>0</td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, officia.</td>
+                        <td>100</td>
+                      </tr>
+                      <tr>
+                        <td>0</td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, officia.</td>
+                        <td>100</td>
+                      </tr>
+                      <tr>
+                        <td>0</td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, officia.</td>
+                        <td>100</td>
+                      </tr>
+                      <tr>
+                        <td>0</td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, officia.</td>
+                        <td>100</td>
+                      </tr>
+                      <tr>
+                        <td>0</td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, officia.</td>
+                        <td>100</td>
+                      </tr>
+                      <tr>
+                        <td>0</td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, officia.</td>
+                        <td>100</td>
+                      </tr>
+                      <tr>
+                        <td>0</td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, officia.</td>
+                        <td>100</td>
+                      </tr>
+                      <tr>
+                        <td>0</td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, officia.</td>
+                        <td>100</td>
+                      </tr>
+                    </table>
+
+                    <p>Und nun zum abschluss</p>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>
+                <div class="foot">
+                  <div class="sticky">Copyright stuff</div>
+                </div>
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </main>
+    </div>
+  </body>
+</html>
