@@ -45,12 +45,14 @@
 
             <div class="article">
               <table>
-                <tr>
-                  <th>Pos</th>
-                  <th>Name</th>
-                  <th>Preis</th>
-                </tr>
-                <tr v-for="i in 60" :key="i">
+                <thead>
+                  <tr>
+                    <th>Pos</th>
+                    <th>Name</th>
+                    <th>Preis</th>
+                  </tr>
+                </thead>
+                <tr v-for="i in 60" :key="i" class="inner-tr">
                   <td>{{ `${i}`.padStart(2, "0") }}</td>
                   <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quis?</td>
                   <td>{{ formatEuro(Math.round(Math.random() * 10000)) }}</td>
@@ -103,6 +105,10 @@ defineExpose({
   /* margin: 11mm 17mm 17mm 17mm; */
 
   margin-bottom: 10cm;
+}
+
+.inner-tr:nth-child(odd) {
+  background-color: #CCC;
 }
 
 #section-to-print {
